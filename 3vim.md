@@ -17,37 +17,37 @@ shift+i
 :%s/old/new                 repace hole file
 :%s/old/new/g               repace hole file global time
 :3,5s:/old/new              relace in due line 
-:sp	ctrl + w + up|down		switch opens window
+:sp	ctrl + w + up|down      switch opens window
 ```
 
 ### view mode
 ```
-w/e | b     forward | back a word
-*|#	        find  next | pre cursor words
-^/0         move to start of line
-f + [char]	to char locate (`;` forwrd  type `,` back way)
-F + [char]	to char locate in back way
+w/e | b         forward | back a word
+*|#             find  next | pre cursor words
+^/0             move to start of line
+f + [char]      to char locate (`;` forwrd  type `,` back way)
+F + [char]      to char locate in back way
 hjkl											   
-gg/G		start / end
-h/m			meddle
-Ctrl + d/u	farword/back half page
-Ctrl + f/b	forward/back a page
-Ctrl + i/o	farword /back cursor locateº
-gcc         toggle comment current line
+gg/G            start / end
+h/m             meddle
+Ctrl + d/u      farword/back half page
+Ctrl + f/b      forward/back a page
+Ctrl + i/o      farword /back cursor locateº
+gcc             toggle comment current line
 ```
 
 ### edit mode
 ```
 iIoOAa
 dd/n1,n2 dd         delete line
-s					delete a line
-J					join with next line
+s                   delete a line
+J                   join with next line
 yy/Y
 p
 x
-diw	 / dw			delete a word
-di{	 / di(	        delete inner {}  / ()
-da{  / da(	        delete with {} and its context 
+diw	 / dw           delete a word
+di{	 / di(          delete inner {}  / ()
+da{  / da(          delete with {} and its context 
 r/R
 u
 ```
