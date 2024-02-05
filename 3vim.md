@@ -1,13 +1,14 @@
 # VIM
 
-
+- one move one action
+- Goft
+- 合理利用 leader 键而不用频繁地使用 ctrl 、 alt 等
 
 ### visual mode
 ctrl+v
 shift+i    
 
 ### command mode
-
 ```
 #find 
 /searh_string n| shilf n
@@ -22,7 +23,6 @@ shift+i
 
 ```
 ### view mode
-
 ```
 w/e | b forward | back a word
 *|#	 find  next | pre cursor words
@@ -40,7 +40,6 @@ Ctrl + w + up/down				Switch opens tabs
 ```
 
 ### edit mode
-
 ```
 iIoOAa
 dd/n1,n2 dd                 delete line
@@ -52,32 +51,13 @@ x
 diw	 / dw										delete a word
 di{	 / di(									delete inner {}  / ()
 da{  / da(									delete with {} and its context 
-
 r/R
-
 u
 ```
-
-### how 
-#### How usage <leader>?
-vim 自带有很多快捷键，再加上各类插件的快捷键，大量快捷键出现在单层空间中难免引起冲突，为缓解该问题，引入了前缀键 <leader>，这样，键 r 可以配置成 r、<leader>r、<leader><leader>r 等等多个快捷键
-
-合理利用 leader 键 就可以在主键盘里完成大部分功能而且不用频繁地使用 ctrl 、 alt 等键。
-
-```
-<Esc>代表Escape键:
-<CR>代表Enter键；
-<D>代表Command键。*
-*Alt键可以使用<M-key>或<A-key>来表示。
-<C>代表Ctrl.*
-*对于组合键，可以用<C-Esc>代表Ctrl-Esc；使用<S-F1>表示Shift-F1.*
-静默执行命令(silent)
-```
-
-#### How many vim version?
+### How many vim version?
 vim 
 vim-gtk
 vim-python
 
-#### Any tips or rututorial?
+### Any tips or rututorial?
 vimtutor zh 
