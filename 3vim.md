@@ -8,11 +8,16 @@
 ```
 ctrl+v
 shift+i    
+gc                          comment selection
 ```
 
 ### cmd mode
 ```
-/searh_string n | shilf n   find 
+n | N                       find next | pre match 
+/ | ?                       find in up | down in current file
+Ctrl + L                    clear search high light
+:grep -r /                  find in other file
+:!grep -r                   find in other file 
 :s/old/new                  repace one line
 :%s/old/new                 repace hole file
 :%s/old/new/g               repace hole file global time
@@ -33,21 +38,31 @@ h/m             meddle
 Ctrl + d/u      farword/back half page
 Ctrl + f/b      forward/back a page
 Ctrl + i/o      farword /back cursor locateº
+Ctrl + p/n      naming...
+Ctrl + e        disable autocomplete
+Ctrl + y        submit autocomplete
+cc | C | s      clear current line and edit
 gcc             toggle comment current line
+gcgc            concel comments
+gcap            comment current part
+gcu             concel comment current part
+zf              zip code create
+zo              zip code open
+zc              zip code close
 ```
 
 ### edit mode
 ```
 iIoOAa
-dd/n1,n2 dd         delete line
-s                   delete a line
-J                   join with next line
+dd/n1,n2 dd             delete line
+s                       delete a line
+J                       join with next line
 yy/Y
 p
 x
-diw	 / dw           delete a word
-di{	 / di(          delete inner {}  / ()
-da{  / da(          delete with {} and its context 
+diw	 / dw               delete a word
+di{	 / di(              delete inner {}  / ()
+da{  / da(              delete with {} and its context 
 r/R
 u
 ```
