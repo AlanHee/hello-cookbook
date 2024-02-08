@@ -173,12 +173,10 @@ export var make var as enviroment
 重定向符号
 一个进程默认会打开 三个文件描述符 标准输入 标准输出 错误输出
 输入重定向
-<
-eg: read var < /path/to/a/file 输出重定向
 ```
+eg: read var < /path/to/a/file 输出重定向
+eg: rm -fv file >success.text 2>error.text
 fg/bg
-&& || ｜>< > | >null
-
 ```
 
 ### regex file
