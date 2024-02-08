@@ -43,3 +43,10 @@ flutter pkcages pub publish --dry-run
 flutter packages pub publish
 ```
 ### JSON Schema是描述你的JSON数据格式
+
+### test
+```
+expect(var,isNonZero)
+expect(var,equals(0))
+setUp((){})
+```
