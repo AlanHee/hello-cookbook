@@ -346,9 +346,19 @@ sudo 使用其他用户身份执行命令
 #new screen
 tmux new -t screen_name
 
+#demon screen 
+ctrl + b + d 
+
+#restore window
+tmux attach -t screen_name 
+
 #switch screen 
-ctrl + b + s
+ctrl + b + s 
 
 #remove screen 
-exit
+ctrl + d | `exit`
+
+#help
+ctrl + b + ?
+
 ```

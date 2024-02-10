@@ -18,7 +18,7 @@ docker inspect id           info
 ```
 #-t:as terminal
 #-i:interaction
-docker run -i -t ubuntu:15.10 /bin/bash
+docker run -it ubuntu:15.10 /bin/bash
 
 #-d deamo
 docker run -d ubuntu:15.10 /bin/sh -c "while true; do echo hello world; sleep 1; done"
