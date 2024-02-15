@@ -8,6 +8,10 @@ a terminal emulator application
 - termux-change-repo
 - termux-tools
 
+### path
+- files/home  your home
+- files/usr   termux resource
+
 ### Keymaps
 ```
  Ctrl+alt+c

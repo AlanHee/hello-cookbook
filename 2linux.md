@@ -1,17 +1,19 @@
-Linux
 ### keyword
-- safe security free never shutdown
-- all is string (file) your should got target 1st while done
-- writer test $? 
-- writer for 不是一行有上下文
+```
+all is string (file) 
+test with  $? 
+cmd for context(上下文)
+```
 
-### file
-- /      #root dir
-- /root  #root user 's home
-- /usr   UNIX software resource
-- /sbin  管理命令
-- usr/bin usr/sbin 预装的命令
-- /etc   global config dir
+### path 
+```
+/           root dir
+/root       root user home
+/usr        UNIX software resource
+/sbin       root super cmd
+usr/bin     usr/sbin preinstall cmd
+/etc        global config dir
+```
 
 #### help
 ```
@@ -231,10 +233,13 @@ _ 空格
 ```
 
 #### 特殊变量
+```
 echo $？// 上次命令的运行结果   0/2
 exist 0 
+```
 
 #### 数字常量
+```
 let "变量名 = 变量值"
 变量值 0开头为八进制 0x 为16进制
 
@@ -257,7 +262,6 @@ echo $(#arr[@])
 echo $(arr[0])
 
 ### 引用 
-```
 ''  完全引用 var=123
 "" 不完全引用
 `` 执行命令
@@ -271,7 +275,6 @@ expr 4 + 5.5 //非整数参数
 var=`expr 4 + 5`
 ```
 
-
 ### function
 ```
 $1,$2,$3..$n  #get function args
@@ -280,22 +283,29 @@ unset function_name #release fun
 ```
 
 ### test
+```
 [] 扩展写法[[]]  支持&& || < > 
 可作为:
 文件测试
 整数比较测试
 字符串测试
 man test 
+```
 
 ### what 
+```
+- safe security free never shutdown
 - centos live for servic
 - ubuntu live for desktop
 - yum（centos redhat)
 - apt （ubuntu debian）
+```
 
 ### boot flow
+```
 BIOS  → MBR → bootLoader （grub）→kernel 
 → systemd→  init  system shell scripts
+```
 
 #### user & group
 
@@ -329,7 +339,6 @@ chage
 change user's group usermode -g
 
 ```
-
 
 ```
 #change file owner and its group
