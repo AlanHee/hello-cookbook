@@ -23,6 +23,7 @@ Ctrl + L                    clear search high light
 :%s/old/new/g               repace hole file global time
 :3,5s:/old/new              relace in due line 
 :sp	ctrl + w + up|down      switch opens window
+:D
 ```
 
 ### view mode
@@ -96,4 +97,9 @@ let g:lsc_auto_map = {
     \ 'SignatureHelp': 'gm',
     \ 'Completion': 'completefunc',
     \}
+```
+### How to add bookmark with NERDTree?
+```
+:Bookmark                   add
+:D                          remove
 ```
