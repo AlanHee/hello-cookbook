@@ -1,12 +1,9 @@
-## Termux
 a terminal emulator application
 
 ### Keyword
-- run it deamon new session with give it a name
-- run proot include termux-chroot
+- run it deamon sessions with names
 - termux-setup-storage
 - termux-change-repo
-- termux-tools
 
 ### path
 - files/home  your home
@@ -24,13 +21,16 @@ a terminal emulator application
 - access android features api `pkg install termux-api
 - run script on boot
 - call termux on tasker
+- termux-chroot
+- termux-tools
+
 ```
 
-### repo
+### repo install 
 ```
-- pkg install game-repo
-- pkg install root-repo
-- pkg install x11-repo
-- pkg install science-repo
+- game-repo
+- root-repo
+- x11-repo
+- science-repo
 ```
 
