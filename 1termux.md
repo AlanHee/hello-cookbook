@@ -6,8 +6,10 @@ a terminal emulator application
 - termux-change-repo
 
 ### path
-- files/home  your home
-- files/usr   termux resource
+```
+files/home  your home
+files/usr   termux resource
+```
 
 ### Keymaps
 ```
