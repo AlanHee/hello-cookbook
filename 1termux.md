@@ -9,8 +9,12 @@ a terminal emulator application
 - termux-tools
 
 ### path
-- files/home  your home
-- files/usr   termux resource
+```
+- $HOME         files/home
+- $PREFIX       files/usr   
+- $LOGDIR       files/usr/var/log
+- $TMPDIR       files/usr/tmp
+```
 
 ### Keymaps
 ```

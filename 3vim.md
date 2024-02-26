@@ -100,7 +100,7 @@ let g:lsc_auto_map = {
 ```
 ### How to add bookmark with NERDTree?
 ```
-:B                          open bookmark list
+:B                          toggle bookmark list
 :Bookmark                   add to bookmark list
 :D                          remove from bookmark list
 ```

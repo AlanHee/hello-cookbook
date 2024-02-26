@@ -1,8 +1,9 @@
 ### keyword
 ```
-all is string (file) 
-test with  $? 
-cmd for context(上下文)
+- all is file
+- just services
+- test with  $? 
+- cmd for context(上下文)
 ```
 
 ### path 
