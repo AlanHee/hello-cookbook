@@ -102,5 +102,5 @@ let g:lsc_auto_map = {
 ```
 :B                          toggle bookmark list
 :Bookmark                   add to bookmark list
-:D                          remove from bookmark list
+Shift d                     remove from bookmark list
 ```
