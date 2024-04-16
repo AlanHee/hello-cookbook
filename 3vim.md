@@ -50,6 +50,7 @@ gcu             concel comment current part
 zf              zip code create
 zo              zip code open
 zc              zip code close
+Ctrl + s | x    +- current num 
 ```
 
 ### edit mode
@@ -104,3 +105,11 @@ let g:lsc_auto_map = {
 :Bookmark                   add to bookmark list
 Shift d                     remove from bookmark list
 ```
+
+### Goft
+```
+;.                         find next do last changed
+```
+
+
+
