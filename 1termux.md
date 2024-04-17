@@ -7,15 +7,10 @@ a terminal emulator application
 
 ### path
 ```
-<<<<<<< HEAD
 - $HOME         files/home
 - $PREFIX       files/usr   
 - $LOGDIR       files/usr/var/log
 - $TMPDIR       files/usr/tmp
-=======
-files/home  your home
-files/usr   termux resource
->>>>>>> 30cf45a30e696bb093d74b1a099fa23dba672e25
 ```
 
 ### Keymaps
