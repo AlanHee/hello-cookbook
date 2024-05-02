@@ -110,6 +110,3 @@ Shift d                     remove from bookmark list
 ```
 ;.                         find next do last changed
 ```
-
-
-
