@@ -39,11 +39,12 @@ ls -R # tree look
 ls -r # revive on time
 cd -  # go to pre pwd 
 tree -a
-ls
 pwd
 ln |ln -s  soft link
 more/less/cat
 head/tail
+tail  -f  ... # view on time 
+tail -1 -f # view last line on time
 history  !!
 whatis
 file 
@@ -58,9 +59,6 @@ date: +/%Y/%m/%d
 bc
 cal
 type cmd
-grep
-tail  -f  ... # view on time 
-tail -1 -f # view last line on time
 wc -l # count lines 
 
 ```
@@ -81,6 +79,7 @@ cp -a # keep own group...
 ```
 . 
 source 
+bash
 ```
 
 ### file type
