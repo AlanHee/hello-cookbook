@@ -38,3 +38,8 @@ a terminal emulator application
 - science-repo
 ```
 
+### How fixed unknow error?
+```
+make sure `pkg upgrade -qyy` before done
+```
+
