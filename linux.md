@@ -43,6 +43,7 @@ info
 echo 
 touch
 mkdir
+zip zip_name.zip path/*.*
 ```
 
 #### read file
@@ -87,7 +88,6 @@ touch /echo
 #cp
 cp -p # keep time
 cp -a # keep own group...
-
 ```
 
 #### run file
