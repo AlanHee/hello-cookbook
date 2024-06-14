@@ -21,6 +21,7 @@ Ctrl + L                    clear search high light
 :s/old/new                  repace one line
 :%s/old/new                 repace hole file
 :%s/old/new/g               repace hole file global time
+:%s/old\C/new/g             repace with no ignore case
 :3,5s:/old/new              relace in due line 
 :sp	ctrl + w + up|down      switch opens window
 :D
