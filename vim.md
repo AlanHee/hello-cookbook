@@ -25,6 +25,7 @@ Ctrl + L                    clear search high light
 :3,5s:/old/new              relace in due line 
 :sp	ctrl + w + up|down      switch opens window
 :D
+!cmd                           run cmd in man screen
 ```
 
 ### view mode

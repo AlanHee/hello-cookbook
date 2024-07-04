@@ -6,6 +6,11 @@ git checkout master
 $: git merge issue1234
 ```
 
+### How to undo the previous commit?
+```
+git revert HEAD^
+```
+
 ### How to reset  go least change?
 ```
  git reset 

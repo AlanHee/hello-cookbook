@@ -66,11 +66,13 @@ whatis
 file 
 find /home -name cat.jpg
 find /home -type d -name myfold
+find / -type f -size +500M -size -1G
 grep # string fiter in a file
 grep password /root/anaconda-ks.cfg
 grep pass... /root/anaconda-ks.cfg
 grep pass* /root/anaconda-ks.cfg
 grep pass....$ /root/anaconda-ks.cfg
+awk 'NR >= 3 && NR <=6' path/to/file
 date: +/%Y/%m/%d
 bc
 cal

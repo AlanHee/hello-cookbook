@@ -44,9 +44,22 @@ flutter packages pub publish
 ```
 ### JSON Schema是描述你的JSON数据格式
 
-### test
+### Test
 ```
-expect(var,isNonZero)
-expect(var,equals(0))
-setUp((){})
+  setUp((){})
+
+  test('calculate', () {
+    expect(calculate(), 42);
+  });
+
+  test('split string()', () {
+    expect('foo,far,baz',
+        allOf([contains('foo'), endsWith('baz'), isNot(startsWith('baz'))]));
+  });
+
+  test('Feature.value() return the value', () {
+    expect(Future.value('far'), completion('far'));
+  });
+
+
 ```
