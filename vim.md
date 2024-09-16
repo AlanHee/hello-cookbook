@@ -26,6 +26,7 @@ Ctrl + L                    clear search high light
 :sp	ctrl + w + up|down      switch opens window
 :D
 !cmd                           run cmd in man screen
+:e                          reload current file
 ```
 
 ### view mode
@@ -69,6 +70,7 @@ di{	 / di(              delete inner {}  / ()
 da{  / da(              delete with {} and its context 
 r/R
 u
+v h|j|k|l               costom select
 ```
 
 ### How many vim version?
