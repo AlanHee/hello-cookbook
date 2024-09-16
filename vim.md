@@ -25,7 +25,7 @@ Ctrl + L                    clear search high light
 :3,5s:/old/new              relace in due line 
 :sp	ctrl + w + up|down      switch opens window
 :D
-!cmd                           run cmd in man screen
+!cmd                        run cmd in man screen
 :e                          reload current file
 ```
 
@@ -105,9 +105,9 @@ let g:lsc_auto_map = {
 ```
 ### How to add bookmark with NERDTree?
 ```
-:B                          toggle bookmark list
-:Bookmark                   add to bookmark list
-Shift d                     remove from bookmark list
+shilt B                     toggle bookmark in nivagator
+:Bookmark                   add current to bookmark
+Shift d                     remove bookmark by selected
 ```
 
 ### Goft
