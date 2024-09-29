@@ -1,14 +1,12 @@
 # VIM
 
 ### tips
-- one move one action
+- 1 move 1 action
 - use leader key better  press  ctrl  alt...
 
 ### visual mode
 ```
 ctrl+v
-shift+i    
-gc                          comment selection
 ```
 
 ### cmd mode
@@ -75,15 +73,9 @@ v h|j|k|l               costom select
 
 ### How many vim version?
 ```
-vim 
-vim-gtk
-vim-python
+vim / vim-gtk / vim-python
 ```
 
-### Any tips or rututorial?
-```
-vimtutor zh 
-```
 ### what is the default lsc hotkey? 
 ```
 #Complete default mappings are:
@@ -105,7 +97,7 @@ let g:lsc_auto_map = {
 ```
 ### How to add bookmark with NERDTree?
 ```
-shilt B                     toggle bookmark in nivagator
+shilt B                     toggle bookmark
 :Bookmark                   add current to bookmark
 Shift d                     remove bookmark by selected
 ```

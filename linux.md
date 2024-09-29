@@ -48,8 +48,6 @@ zip zip_name.zip path/*.*
 
 #### read file
 ```
-#ls
-ls [选项] [参数]
 ls -h # show file sizeon m 
 ls -R # tree look 
 ls -r # revive on time
@@ -78,7 +76,8 @@ bc
 cal
 type cmd
 wc -l # count lines 
-
+stat file
+du   
 ```
 
 #### write file
