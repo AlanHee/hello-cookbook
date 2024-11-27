@@ -43,7 +43,8 @@ info
 echo 
 touch
 mkdir
-zip zip_name.zip path/*.*
+tar czvf archive.tar.gz /path/to/files
+zip -r archive.zip path/to/files
 ```
 
 #### read file
@@ -89,6 +90,8 @@ touch /echo
 #cp
 cp -p # keep time
 cp -a # keep own group...
+tar -xzvf archive.tar.gz 
+unzip archive.zip
 ```
 
 #### run file
