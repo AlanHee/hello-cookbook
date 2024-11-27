@@ -45,6 +45,8 @@ touch
 mkdir
 tar czvf archive.tar.gz /path/to/files
 zip -r archive.zip path/to/files
+# crypt
+zip -er archive.zip path/to/files
 ```
 
 #### read file
