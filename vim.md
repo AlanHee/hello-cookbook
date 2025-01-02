@@ -27,6 +27,16 @@ Ctrl + L                    clear search high light
 :e                          reload current file
 ```
 
+#### reg
+```
+:reg {register}             print register
+.                           last insert content
+:                           last excute cmd
+"                           default register while yy 
+%                           current doc name
+
+```
+
 ### view mode
 ```
 w/e | b         forward | back a word
