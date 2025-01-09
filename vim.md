@@ -27,6 +27,13 @@ Ctrl + L                    clear search high light
 :e                          reload current file
 ```
 
+#### cmd mode: repeat cmd `.`
+
+```
+.                           repeat last change
+u                           disable last change
+ctrl + r                    redo last change
+```
 #### reg
 ```
 :reg {register}             print register
@@ -60,6 +67,27 @@ zo              zip code open
 zc              zip code close
 Ctrl + s | x    +- current num 
 ```
+
+### edit mode
+
+#### {operator}
+```
+y               copy
+d               delete
+c               change
+v               into visual mode
+yy/dd/cc        operator current line 
+```
+
+#### {operator}{motion}
+e.g:
+```
+ye              copy to end of word 
+d$              delete to end of line
+dgg             delete to 1st line
+dt;             delete util map the `;`
+```
+
 
 ### edit mode: basic
 ```
