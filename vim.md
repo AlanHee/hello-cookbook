@@ -27,6 +27,20 @@ Ctrl + L                    clear search high light
 :e                          reload current file
 ```
 
+#### search in current line
+```
+f{char}/t{char}:            jump next char in current line
+F{char}/T{char}:            not forward but after 
+;/,                         quck next/pre search 
+```
+
+#### search in file
+```
+/{pattern}                  search forward
+?{pattern}                  search before
+n/N                         jump next
+```
+
 #### cmd mode: repeat cmd `.`
 
 ```
@@ -42,6 +56,19 @@ ctrl + r                    redo last change
 "                           default register while yy 
 %                           current doc name
 
+```
+#### replace
+```
+:[range]s/{pattern}/{string}/[flags]
+# replace pattern as string
+
+flags:
+g           for repace all in line
+i           inore case
+c           make sure for repace
+n           just  count
+eg: count how many times `Vim` appear
+:%s/Vim//gn
 ```
 
 ### view mode
@@ -67,8 +94,32 @@ zo              zip code open
 zc              zip code close
 Ctrl + s | x    +- current num 
 ```
+#### mark 
+```
+m{mark}:        mark current locate as `mark`
+`{mark}:        go to mark locate
+
+mark can be [a-z]
+
+``:             last jump locate
+'.:             last change locate
+'^:             last insert locate
+```
+
 
 ### edit mode
+```
+iIoOAa
+dd/n1,n2 dd             delete line
+s                       delete a line
+J                       join with next line
+yy/Y
+p
+x
+r/R
+u
+v h|j|k|l               costom select
+```
 
 #### {operator}
 ```
@@ -86,22 +137,6 @@ ye              copy to end of word
 d$              delete to end of line
 dgg             delete to 1st line
 dt;             delete util map the `;`
-```
-
-
-### edit mode: basic
-```
-iIoOAa
-dd/n1,n2 dd             delete line
-s                       delete a line
-J                       join with next line
-yy/Y
-p
-x
-r/R
-u
-v h|j|k|l               costom select
-
 ```
 
 #### edit mode: {textobjects}
@@ -131,7 +166,9 @@ yi{                 copy inner {} text
 vim / vim-gtk / vim-python
 ```
 
-### what is the default lsc hotkey? 
+### For Plug spiecal 
+
+#### vim-lsc 
 ```
 #Complete default mappings are:
 let g:lsc_auto_map = {
@@ -150,14 +187,14 @@ let g:lsc_auto_map = {
     \ 'Completion': 'completefunc',
     \}
 ```
-### How to add bookmark with NERDTree?
+#### NERDTree
 ```
 shilt B                     toggle bookmark
 :Bookmark                   add current to bookmark
 Shift d                     remove bookmark by selected
 ```
 
-### how comment with shortcut?
+#### vim-commentary
 ```
 gcc             toggle comment current line
 gcgc            cancel comments

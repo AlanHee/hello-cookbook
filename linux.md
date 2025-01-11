@@ -2,7 +2,9 @@
 
 ### what 
 ```
- safe security free never shutdown
+- all is file
+- just services
+- safe security free never shutdown
 ```
 
 ### How 
@@ -11,12 +13,12 @@
 - ubuntu live for desktop
 - yum（centos redhat)
 - apt （ubuntu debian）
+- $ normal user
+- # root user
 ```
 
-### keyword
+### Tips and workflow
 ```
-- all is file
-- just services
 - test with  $? 
 - cmd for context(上下文)
 ```
@@ -38,6 +40,13 @@ help
 info
 ```
 
+#### How to determine inner or outter file
+`type` [cmd] 
+
+```
+
+```
+
 #### add file
 ```
 echo 
@@ -54,6 +63,9 @@ zip -er archive.zip path/to/files
 ls -h # show file sizeon m 
 ls -R # tree look 
 ls -r # revive on time
+ls -l # as list view
+ls -t # sort list by time
+
 cd -  # go to pre pwd 
 tree -a
 pwd
