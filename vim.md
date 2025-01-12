@@ -70,6 +70,19 @@ n           just  count
 eg: count how many times `Vim` appear
 :%s/Vim//gn
 ```
+#### Ex
+Diff Ex with CMD line?
+CMD for unit in a line
+CMD no need point address
+```
+:[range] delete
+:[range] yank
+:[range] print
+
+:[range] copy {address}
+:[range] move {address}
+:[range] put [x]
+```
 
 ### view mode
 ```
