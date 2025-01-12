@@ -11,23 +11,15 @@ ctrl+v
 
 ### cmd mode
 ```
-n | N                       find next | pre match 
-/ | ?                       find in up | down in current file
-Ctrl + L                    clear search high light
 :grep -r /                  find in other file
 :!grep -r                   find in other file 
-:s/old/new                  repace one line
-:%s/old/new                 repace hole file
-:%s/old/new/g               repace hole file global time
-:%s/old\C/new/g             repace with no ignore case
-:3,5s:/old/new              relace in due line 
 :sp	ctrl + w + up|down      switch opens window
 :D
 !cmd                        run cmd in man screen
 :e                          reload current file
 ```
 
-#### search in current line
+#### search in line
 ```
 f{char}/t{char}:            jump next char in current line
 F{char}/T{char}:            not forward but after 
@@ -39,15 +31,17 @@ F{char}/T{char}:            not forward but after
 /{pattern}                  search forward
 ?{pattern}                  search before
 n/N                         jump next
+Ctrl + L                    clear search high light
 ```
 
-#### cmd mode: repeat cmd `.`
+#### repeat `.`
 
 ```
 .                           repeat last change
 u                           disable last change
 ctrl + r                    redo last change
 ```
+
 #### reg
 ```
 :reg {register}             print register
@@ -152,13 +146,13 @@ dgg             delete to 1st line
 dt;             delete util map the `;`
 ```
 
-#### edit mode: {textobjects}
+#### {textobjects}
 ```
 w/W/s/p                 word/word word/string/p
 i/a                     inner/around
 ```
 
-#### edit mode: {operator}{textobjects} e.g:
+#### {operator}{textobjects} 
 ```
 - with `.` repeat last operator
 - `[count]` repeat opertor
@@ -168,7 +162,7 @@ ci(                 change iinner () text
 yi{                 copy inner {} text 
 ```
 
-#### edit mode: {operator}{motion} vs {operator}{textobjects}
+#### {operator}{motion} vs {operator}{textobjects}
 - motion can be with `w` `b` `e` etc..
 - motion 更加灵活，但并不明确
 - textobjects due is 明确的
