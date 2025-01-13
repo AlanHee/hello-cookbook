@@ -77,14 +77,6 @@ tail -1 -f # view last line on time
 history  !!
 whatis
 file 
-find /home -name cat.jpg
-find /home -type d -name myfold
-find / -type f -size +500M -size -1G
-grep # string fiter in a file
-grep password /root/anaconda-ks.cfg
-grep pass... /root/anaconda-ks.cfg
-grep pass* /root/anaconda-ks.cfg
-grep pass....$ /root/anaconda-ks.cfg
 awk 'NR >= 3 && NR <=6' path/to/file
 date: +/%Y/%m/%d
 bc
@@ -145,6 +137,39 @@ SBIT  用于目录 里面新建的自己和root 可删除 eg /tmp
 x 进入目录
 rx 显示目录文件名
 wx 修改目录文件名
+```
+
+### find file in path
+```
+find [path] -name | -perm | -user | -type  file_name_to_find
+e.g:
+find /home -name cat.jpg
+find /home -type d -name myfold
+find / -type f -size +500M -size -1G
+```
+
+### grep string in a file
+```
+grep 
+-i  ignore case
+-R  
+-v  
+-a 
+e.g:
+grep # string fiter in a file
+grep password /root/anaconda-ks.cfg
+grep pass... /root/anaconda-ks.cfg
+grep pass* /root/anaconda-ks.cfg
+grep pass....$ /root/anaconda-ks.cfg
+
+```
+
+### init file
+```
+df                  see disk size cmd
+du                  see fold size cmd
+fdisk   [-i]         sperete disk cmd
+mkfs                disk format cmd
 ```
 
 ### shell var

@@ -6,7 +6,8 @@
 
 ### visual mode
 ```
-ctrl+v
+v                           col or line v mode
+ctrl+v                      module v mode
 ```
 
 ### cmd mode
