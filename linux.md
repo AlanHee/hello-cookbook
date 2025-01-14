@@ -180,6 +180,7 @@ var='Hello'
 let var=10+20
 l=ls
 letc=$(ls -l /etc)
+```
 
 #### 变量的引用
 $(var) // 有时也可以省略 $var
@@ -209,27 +210,23 @@ let "变量名 = 变量值"
 #### shell var
 
 ```
+```
 set | unset "set version= $ (ls -al)"
 env | $PATH |$HOME |$SHELL
 export var make var as enviroment
 ```
 
-### regex file
+### regex
 ```
-#one char
-. one
-* more
-[] due in []
-^ start
-$ end
-\ transfer
-#extend char
-| or
-[^] not in due
-() group
-\b
-\B
-[?:]
+.           one
+*           more
+[]          due in
+[^]         not due in
+^           start
+$           end
+\           transfer
+|           or
+()          group
 ```
 
 ### 括号总结
