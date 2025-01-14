@@ -17,13 +17,20 @@
 - # root user
 ```
 
-### Tips and workflow
+### file test
 ```
 - test with  $? 
 - cmd for context(上下文)
 ```
 
-### path 
+### file help
+```
+man
+help
+info
+```
+
+### file path 
 ```
 /           root dir
 /root       root user home
@@ -33,39 +40,26 @@ usr/bin     usr/sbin preinstall cmd
 /etc        global config dir
 ```
 
-#### help
+#### file type
 ```
-man
-help
-info
-```
-
-#### How to determine inner or outter file
-`type` [cmd] 
+type [cmd]  determine inner or outter file
 
 ```
 
-```
-
-#### add file
+#### file create
 ```
 echo 
 touch
-mkdir
-tar czvf archive.tar.gz /path/to/files
-zip -r archive.zip path/to/files
-# crypt
-zip -er archive.zip path/to/files
+mkdir fold/{fold1,fold2}path
 ```
 
-#### read file
+#### file read
 ```
 ls -h # show file sizeon m 
 ls -R # tree look 
 ls -r # revive on time
 ls -l # as list view
 ls -t # sort list by time
-
 cd -  # go to pre pwd 
 tree -a
 pwd
@@ -87,20 +81,28 @@ stat file
 du   
 ```
 
-#### write file
+#### file modify
 ```
-mkdir fold/{fold1,fold2}path
 mv
 rm -r 
 touch /echo
 #cp
 cp -p # keep time
 cp -a # keep own group...
-tar -xzvf archive.tar.gz 
-unzip archive.zip
 ```
 
-#### run file
+### file express
+```
+tar -xzvf archive.tar.gz 
+tar czvf archive.tar.gz /path/to/files
+zip -r archive.zip path/to/files
+zip -er archive.zip path/to/files   # crypt
+unzip archive.zip
+
+```
+
+
+#### file run
 ```
 . 
 source 
@@ -172,50 +174,6 @@ fdisk   [-i]         sperete disk cmd
 mkfs                disk format cmd
 ```
 
-### shell var
-```
-var=123
-var=“hello word”
-var='Hello'
-let var=10+20
-l=ls
-letc=$(ls -l /etc)
-```
-
-#### 变量的引用
-$(var) // 有时也可以省略 $var
-
-#### 变量的默认范围
-导出 export
-删除 unset
-
-
-#### 环境变量配置文件
-/etc/profile
-/etc/profile.d
-~/.bashc
-~/.bash_profile
-~/etc/bashc
-
-#### 特殊变量
-echo $？// 上次命令的运行结果   0/2
-exist 0 
-
-#### 数字常量
-let "变量名 = 变量值"
-变量值 0开头为八进制 0x 为16进制
-
-```
-
-#### shell var
-
-```
-```
-set | unset "set version= $ (ls -al)"
-env | $PATH |$HOME |$SHELL
-export var make var as enviroment
-```
-
 ### regex
 ```
 .           one
@@ -228,100 +186,6 @@ $           end
 |           or
 ()          group
 ```
-
-### 括号总结
-```
-圆括号
-单独使用一个会产生子shell 
-数组初始化
-
-方括号 
-[] test
-[[]] 测试表达式
-
-尖括号 重定向
-
-花括号
-输出范围  echo {0..9}
-文件复制/生成
-```
-
-其他通配符
-```
-* 通配符
-？ 条件测试或通配符
-$ 取值符号
-| 管道
-& 后台运行
-_ 空格
-# 注释
-; 命令分隔   case ;; 
-: 空指令
-. 和 source 相同
-~ home目录
-, 分隔目录
-```
-
-#### 特殊变量
-```
-echo $？// 上次命令的运行结果   0/2
-exist 0 
-```
-
-#### 数字常量
-```
-let "变量名 = 变量值"
-变量值 0开头为八进制 0x 为16进制
-
-双圆括号是let 命令的简化
-(( a = 123  ))
-(( a++  ))
-echo $((10+10))
-
-#### 数组变量
-定义
-arr=( 10 5 22 15)
-
-显示数组所有元素
-echo $(arr[@])
-
-显示数组个数
-echo $(#arr[@])
-
-显示数组第1个元素
-echo $(arr[0])
-
-### 引用 
-''  完全引用 var=123
-"" 不完全引用
-`` 执行命令
-eg :
-var=123
-echo '$var'  // output $var 
-echo "$var" // output 123
-expr 4 + 5 
-expr 4 +5 // 语法错误
-expr 4 + 5.5 //非整数参数
-var=`expr 4 + 5`
-```
-
-### function
-```
-$1,$2,$3..$n  #get function args
-/etc/init.d/functions # system self funs
-unset function_name #release fun
-```
-
-### test
-```
-[] 扩展写法[[]]  支持&& || < > 
-可作为:
-文件测试
-整数比较测试
-字符串测试
-man test 
-```
-
 
 ### boot flow
 ```
