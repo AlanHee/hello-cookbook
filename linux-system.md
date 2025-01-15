@@ -34,10 +34,10 @@ info
 ```
 /           root dir
 /root       root user home
-/usr        UNIX software resource
 /sbin       root super cmd
-usr/bin     usr/sbin preinstall cmd
 /etc        global config dir
+/usr        UNIX software resource
+/usr/bin     usr/sbin preinstall cmd
 ```
 
 #### file type
@@ -50,7 +50,7 @@ type [cmd]  determine inner or outter file
 ```
 echo 
 touch
-mkdir fold/{fold1,fold2}path
+mkdir fold/{fold1,fold2}/path
 ```
 
 #### file read
@@ -64,7 +64,7 @@ cd -  # go to pre pwd
 tree -a
 pwd
 ln |ln -s  soft link
-more/less/cat
+more/less/cat       -f
 head/tail
 tail  -f  ... # view on time 
 tail -1 -f # view last line on time
@@ -91,16 +91,21 @@ cp -p # keep time
 cp -a # keep own group...
 ```
 
-### file express
+#### file tar
 ```
 tar -xzvf archive.tar.gz 
 tar czvf archive.tar.gz /path/to/files
+```
+
+#### file expression
+```
 zip -r archive.zip path/to/files
 zip -er archive.zip path/to/files   # crypt
 unzip archive.zip
+gzip
+bzip2
 
 ```
-
 
 #### file run
 ```
@@ -141,7 +146,7 @@ rx 显示目录文件名
 wx 修改目录文件名
 ```
 
-### find file in path
+### file find
 ```
 find [path] -name | -perm | -user | -type  file_name_to_find
 e.g:
@@ -150,7 +155,7 @@ find /home -type d -name myfold
 find / -type f -size +500M -size -1G
 ```
 
-### grep string in a file
+### file filter in a file
 ```
 grep 
 -i  ignore case
@@ -166,7 +171,7 @@ grep pass....$ /root/anaconda-ks.cfg
 
 ```
 
-### init file
+#### file init
 ```
 df                  see disk size cmd
 du                  see fold size cmd
@@ -174,7 +179,7 @@ fdisk   [-i]         sperete disk cmd
 mkfs                disk format cmd
 ```
 
-### regex
+#### file regex
 ```
 .           one
 *           more
@@ -187,13 +192,13 @@ $           end
 ()          group
 ```
 
-### boot flow
+#### file start
 ```
 BIOS  → MBR → bootLoader （grub）→kernel 
 → systemd→  init  system shell scripts
 ```
 
-#### user & group
+#### file's user & group
 
 ```
 #user operate

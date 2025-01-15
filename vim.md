@@ -1,6 +1,6 @@
 # VIM
 
-### tips
+### how
 - more moudle in action to better with `.` eg: `diw` more then `dw`
 - use leader key better press  ctrl  alt...
 
@@ -139,7 +139,6 @@ yy/dd/cc        operator current line
 ```
 
 #### {operator}{motion}
-e.g:
 ```
 ye              copy to end of word 
 d$              delete to end of line
@@ -174,7 +173,7 @@ yi{                 copy inner {} text
 vim / vim-gtk / vim-python
 ```
 
-### For Plug spiecal 
+### Plug 
 
 #### vim-lsc 
 ```
