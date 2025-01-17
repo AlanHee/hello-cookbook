@@ -49,3 +49,14 @@ pkill -f tmux
 ctrl + b + ?
 
 ```
+
+### at
+```
+run just 1 time
+```
+
+### cron
+```
+crontab -l          list all plan
+crontab -e          edit plan
+```

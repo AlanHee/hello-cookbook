@@ -91,18 +91,19 @@ cp -p # keep time
 cp -a # keep own group...
 ```
 
-#### file tar
+#### file archives
 ```
 tar -xzvf archive.tar.gz 
 tar czvf archive.tar.gz /path/to/files
 ```
 
-#### file expression
+#### file compression
 ```
 zip -r archive.zip path/to/files
 zip -er archive.zip path/to/files   # crypt
 unzip archive.zip
-gzip
+gzip file
+gzip -d file.gz
 bzip2
 
 ```
@@ -128,10 +129,7 @@ s suit
 ### file primession 
 ```
 r4 w2 x1
-chown  user_name file
-chown :group_name file // or chgrp...
-chown user:group file
-/special 
+chmod
 chmod 4755  /etc/passwd
 chmod 1777 /tmp
 
@@ -139,8 +137,10 @@ chmod 1777 /tmp
 SUID 用于二进制执行文件 运行命令时取得文件属组权限
 SGID 用于目录 里面创建的目录 自动更改为该目录属性组
 SBIT  用于目录 里面新建的自己和root 可删除 eg /tmp
+```
 
 ### 目录权限的表示方法
+```
 x 进入目录
 rx 显示目录文件名
 wx 修改目录文件名
@@ -155,20 +155,22 @@ find /home -type d -name myfold
 find / -type f -size +500M -size -1G
 ```
 
-### file filter in a file
+### file find text
 ```
 grep 
 -i  ignore case
 -R  
 -v  
 -a 
-e.g:
-grep # string fiter in a file
+
+# search recursively for pattern in file
 grep password /root/anaconda-ks.cfg
 grep pass... /root/anaconda-ks.cfg
 grep pass* /root/anaconda-ks.cfg
 grep pass....$ /root/anaconda-ks.cfg
 
+# search recursively for pattern in dir
+grep -r pattern dir 
 ```
 
 #### file init
@@ -190,6 +192,7 @@ $           end
 \           transfer
 |           or
 ()          group
+{...}       times
 ```
 
 #### file start
@@ -199,44 +202,42 @@ BIOS  → MBR → bootLoader （grub）→kernel
 ```
 
 #### file's user & group
-
 ```
-#user operate
 id
+su - user-name      switch user
+su - root
+
 useradd -g manager -m user_name 
 userdel [-r] user_name 
 usermod -d /home/path user_name 
 passwd 
-su - user_name 切换用户（使用login shell） 
-su - root
 
-```
-
-```
-#group operate
 groupadd
 groupmod
 groupdel
 
-```
-
-
-```
-#update user and group
-#users config file /etc/passwd 
-#password file /etc/shadow 
-
-chage 
-change user's group usermode -g
-
-```
-
-```
-#change file owner and its group
 chown
 chgrp
-chmod
-sudo 使用其他用户身份执行命令
-#login as root user 
 
+/etc/passwd 
+/etc/shadow 
+```
+
+
+### file net
+```
+ip
+ping host           result
+whois domain        Who
+dig domain          DNS info
+netstat -pnltu      localhost info
+ifconfig            ip interface
+ssh usr@host        remote login
+scp                 remote copy
+wget url            get file 
+curl url            send a request  
+traceroute domain   print the route 
+mtr domain          combines traceroute and ping
+ss                  modern netstat
+nmap                net exploration and security scanner
 ```

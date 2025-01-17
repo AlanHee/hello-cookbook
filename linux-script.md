@@ -122,6 +122,8 @@ var=`expr 4 + 5`
 ```
 
 ### function
+- why function? use muli-time
+- how use?  define before call
 ```
 $1,$2,$3..$n  #get function args
 /etc/init.d/functions # system self funs
