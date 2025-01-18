@@ -223,6 +223,16 @@ chgrp
 /etc/shadow 
 ```
 
+### file road
+```
+|
+sort
+join
+>
+>>
+<
+
+```
 
 ### file net
 ```
@@ -240,4 +250,19 @@ traceroute domain   print the route
 mtr domain          combines traceroute and ping
 ss                  modern netstat
 nmap                net exploration and security scanner
+```
+
+### file mount
+```
+mount -t            file system
+mount -o rw | rw    file read only | read & write
+mount -o remoute
+```
+
+### file LVM(3level) 
+```
+pvcreate & pvs      phical  create & see
+vgcreate & vgs      logic group create & see
+lvcreate % lvs      logic craete & see
+lvextend            logic extend
 ```
