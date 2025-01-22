@@ -55,28 +55,27 @@ mkdir fold/{fold1,fold2}/path
 
 #### file read
 ```
-ls -h # show file sizeon m 
-ls -R # tree look 
-ls -r # revive on time
-ls -l # as list view
-ls -t # sort list by time
-cd -  # go to pre pwd 
-tree -a
+ls -h           show file sizeon m 
+ls -R           tree look 
+ls -r           revive on time
+ls -l           as list view
+ls -t           sort list by time
+cd -            go to pre pwd 
+tree            -a
 pwd
-ln |ln -s  soft link
-more/less/cat       -f
+ln |ln -s       soft link
+more/less/cat   -f
 head/tail
-tail  -f  ... # view on time 
-tail -1 -f # view last line on time
+tail  -f        view on time 
+tail -1 -f      view last line on time
 history  !!
 whatis
 file 
-awk 'NR >= 3 && NR <=6' path/to/file
 date: +/%Y/%m/%d
 bc
 cal
 type cmd
-wc -l # count lines 
+wc -l           count lines 
 stat file
 du   
 ```
@@ -265,4 +264,17 @@ pvcreate & pvs      phical  create & see
 vgcreate & vgs      logic group create & see
 lvcreate % lvs      logic craete & see
 lvextend            logic extend
+```
+
+### file advance operate
+
+#### awk
+```
+awk 'NR >= 3 && NR <=6' path/to/file
+#TODO
+```
+
+#### sed
+```
+#TODO
 ```
