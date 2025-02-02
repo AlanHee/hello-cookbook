@@ -204,7 +204,6 @@ Shift d                     remove bookmark by selected
 #### vim-commentary
 ```
 gcc             toggle comment current line
-gcgc            cancel comments
 gcap            comment current part
 gcu             cancel comment current part
 ```
