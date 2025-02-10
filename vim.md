@@ -1,16 +1,16 @@
 # VIM
 
-### how
+## how
 - more moudle in action to better with `.` eg: `diw` more then `dw`
 - use leader key better press  ctrl  alt...
 
-### visual mode
+## visual mode
 ```
 v                           col or line v mode
 ctrl+v                      module v mode
 ```
 
-### cmd mode
+## cmd mode
 ```
 :grep -r /                  find in other file
 :!grep -r                   find in other file 
@@ -35,7 +35,7 @@ n/N                         jump next
 Ctrl + L                    clear search high light
 ```
 
-#### repeat `.`
+### repeat `.`
 
 ```
 .                           repeat last change
@@ -43,7 +43,7 @@ u                           disable last change
 ctrl + r                    redo last change
 ```
 
-#### reg
+### reg
 ```
 :reg {register}             print register
 .                           last insert content
@@ -52,7 +52,7 @@ ctrl + r                    redo last change
 %                           current doc name
 
 ```
-#### replace
+### replace
 ```
 :[range]s/{pattern}/{string}/[flags]
 # replace pattern as string
