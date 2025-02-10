@@ -79,7 +79,7 @@ CMD no need point address
 :[range] put [x]
 ```
 
-### view mode
+## view mode
 ```
 w/e | b         forward | back a word
 *|#             find  next | pre cursor words
