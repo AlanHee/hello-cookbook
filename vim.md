@@ -117,18 +117,15 @@ mark can be [a-z]
 iIoOAa
 s                       delete a line
 J                       join with next line
-yy/Y
-p
 x
 r/R
 u
-v h|j|k|l               costom select
 Ctrl + s | x    +- current num 
 ```
 
 ### {operator}
 ```
-y               copy
+yy | Y               copy
 d               delete
 c               change
 v               into visual mode
