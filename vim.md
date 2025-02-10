@@ -82,11 +82,9 @@ CMD no need point address
 ## view mode
 ```
 w/e | b         forward | back a word
-*|#             find  next | pre cursor words
 ^/0 | $         move to start of line | last of line
 %               join to reg
-f + [char]      to char locate (`;` forwrd  type `,` back way)
-F + [char]      to char locate in back way
+f | F + [char]      to char locate (`;` forwrd  type `,` back way)
 hjkl											   
 gg/G            start / end
 h/m             meddle
