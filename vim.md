@@ -1,6 +1,6 @@
 # VIM
 
-## how
+# how
 - more moudle in action to better with `.` eg: `diw` more then `dw`
 - use leader key better press  ctrl  alt...
 
