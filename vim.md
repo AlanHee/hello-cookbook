@@ -168,14 +168,15 @@ yi{                 copy inner {} text
 - textobjects due is 明确的
 - textobjects  只能跟在operator后面
 
+## FAQ
 ### How many vim version?
 ```
 vim / vim-gtk / vim-python
 ```
 
-### Plug 
+## Plug 
 
-#### vim-lsc 
+### vim-lsc 
 ```
 #Complete default mappings are:
 let g:lsc_auto_map = {
@@ -194,14 +195,14 @@ let g:lsc_auto_map = {
     \ 'Completion': 'completefunc',
     \}
 ```
-#### NERDTree
+### NERDTree
 ```
 shilt B                     toggle bookmark
 :Bookmark                   add current to bookmark
 Shift d                     remove bookmark by selected
 ```
 
-#### vim-commentary
+### vim-commentary
 ```
 gcc             toggle comment current line
 gcap            comment current part
