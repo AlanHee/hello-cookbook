@@ -115,7 +115,6 @@ mark can be [a-z]
 ## edit mode
 ```
 iIoOAa
-dd/n1,n2 dd             delete line
 s                       delete a line
 J                       join with next line
 yy/Y
