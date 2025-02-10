@@ -129,7 +129,7 @@ v h|j|k|l               costom select
 Ctrl + s | x    +- current num 
 ```
 
-#### {operator}
+### {operator}
 ```
 y               copy
 d               delete
@@ -138,7 +138,7 @@ v               into visual mode
 yy/dd/cc        operator current line 
 ```
 
-#### {operator}{motion}
+### {operator}{motion}
 ```
 ye              copy to end of word 
 d$              delete to end of line
@@ -146,13 +146,13 @@ dgg             delete to 1st line
 dt;             delete util map the `;`
 ```
 
-#### {textobjects}
+### {textobjects}
 ```
 w/W/s/p                 word/word word/string/p
 i/a                     inner/around
 ```
 
-#### {operator}{textobjects} 
+### {operator}{textobjects} 
 ```
 - with `.` repeat last operator
 - `[count]` repeat opertor
@@ -162,7 +162,7 @@ ci(                 change iinner () text
 yi{                 copy inner {} text 
 ```
 
-#### {operator}{motion} vs {operator}{textobjects}
+### {operator}{motion} vs {operator}{textobjects}
 - motion can be with `w` `b` `e` etc..
 - motion 更加灵活，但并不明确
 - textobjects due is 明确的
