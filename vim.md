@@ -100,7 +100,6 @@ cc | C | s      clear current line and edit
 zf              zip code create
 zo              zip code open
 zc              zip code close
-Ctrl + s | x    +- current num 
 ```
 #### mark 
 ```
@@ -115,7 +114,7 @@ mark can be [a-z]
 ```
 
 
-### edit mode
+## edit mode
 ```
 iIoOAa
 dd/n1,n2 dd             delete line
@@ -127,6 +126,7 @@ x
 r/R
 u
 v h|j|k|l               costom select
+Ctrl + s | x    +- current num 
 ```
 
 #### {operator}
