@@ -63,7 +63,7 @@ ls -t           sort list by time
 cd -            go to pre pwd 
 tree            -a
 pwd
-ln |ln -s       soft link
+ln target link -s
 more/less/cat   -f
 head/tail
 tail  -f        view on time 
