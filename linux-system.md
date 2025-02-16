@@ -62,6 +62,7 @@ ls -l           as list view
 ls -t           sort list by time
 cd -            go to pre pwd 
 tree            -a
+pstree
 pwd
 ln target link -s
 more/less/cat   -f

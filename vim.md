@@ -1,16 +1,16 @@
 # VIM
 
-### how
+# how
 - more moudle in action to better with `.` eg: `diw` more then `dw`
 - use leader key better press  ctrl  alt...
 
-### visual mode
+## visual mode
 ```
 v                           col or line v mode
 ctrl+v                      module v mode
 ```
 
-### cmd mode
+## cmd mode
 ```
 :grep -r /                  find in other file
 :!grep -r                   find in other file 
@@ -35,7 +35,7 @@ n/N                         jump next
 Ctrl + L                    clear search high light
 ```
 
-#### repeat `.`
+### repeat `.`
 
 ```
 .                           repeat last change
@@ -43,7 +43,7 @@ u                           disable last change
 ctrl + r                    redo last change
 ```
 
-#### reg
+### reg
 ```
 :reg {register}             print register
 .                           last insert content
@@ -52,7 +52,7 @@ ctrl + r                    redo last change
 %                           current doc name
 
 ```
-#### replace
+### replace
 ```
 :[range]s/{pattern}/{string}/[flags]
 # replace pattern as string
@@ -79,14 +79,12 @@ CMD no need point address
 :[range] put [x]
 ```
 
-### view mode
+## view mode
 ```
 w/e | b         forward | back a word
-*|#             find  next | pre cursor words
 ^/0 | $         move to start of line | last of line
 %               join to reg
-f + [char]      to char locate (`;` forwrd  type `,` back way)
-F + [char]      to char locate in back way
+f | F + [char]      to char locate (`;` forwrd  type `,` back way)
 hjkl											   
 gg/G            start / end
 h/m             meddle
@@ -100,7 +98,6 @@ cc | C | s      clear current line and edit
 zf              zip code create
 zo              zip code open
 zc              zip code close
-Ctrl + s | x    +- current num 
 ```
 #### mark 
 ```
@@ -115,30 +112,27 @@ mark can be [a-z]
 ```
 
 
-### edit mode
+## edit mode
 ```
 iIoOAa
-dd/n1,n2 dd             delete line
 s                       delete a line
 J                       join with next line
-yy/Y
-p
 x
 r/R
 u
-v h|j|k|l               costom select
+Ctrl + s | x    +- current num 
 ```
 
-#### {operator}
+### {operator}
 ```
-y               copy
+yy | Y               copy
 d               delete
 c               change
 v               into visual mode
 yy/dd/cc        operator current line 
 ```
 
-#### {operator}{motion}
+### {operator}{motion}
 ```
 ye              copy to end of word 
 d$              delete to end of line
@@ -146,13 +140,13 @@ dgg             delete to 1st line
 dt;             delete util map the `;`
 ```
 
-#### {textobjects}
+### {textobjects}
 ```
 w/W/s/p                 word/word word/string/p
 i/a                     inner/around
 ```
 
-#### {operator}{textobjects} 
+### {operator}{textobjects} 
 ```
 - with `.` repeat last operator
 - `[count]` repeat opertor
@@ -162,20 +156,21 @@ ci(                 change iinner () text
 yi{                 copy inner {} text 
 ```
 
-#### {operator}{motion} vs {operator}{textobjects}
+### {operator}{motion} vs {operator}{textobjects}
 - motion can be with `w` `b` `e` etc..
 - motion 更加灵活，但并不明确
 - textobjects due is 明确的
 - textobjects  只能跟在operator后面
 
+## FAQ
 ### How many vim version?
 ```
 vim / vim-gtk / vim-python
 ```
 
-### Plug 
+## Plug 
 
-#### vim-lsc 
+### vim-lsc 
 ```
 #Complete default mappings are:
 let g:lsc_auto_map = {
@@ -194,17 +189,16 @@ let g:lsc_auto_map = {
     \ 'Completion': 'completefunc',
     \}
 ```
-#### NERDTree
+### NERDTree
 ```
 shilt B                     toggle bookmark
 :Bookmark                   add current to bookmark
 Shift d                     remove bookmark by selected
 ```
 
-#### vim-commentary
+### vim-commentary
 ```
 gcc             toggle comment current line
-gcgc            cancel comments
 gcap            comment current part
 gcu             cancel comment current part
 ```
