@@ -17,7 +17,7 @@ a linux terminal emulator app
 ```
 
 
-### path
+### Path
 ```
 - $HOME         files/home
 - $PREFIX       files/usr   
