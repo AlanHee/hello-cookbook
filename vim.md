@@ -89,7 +89,7 @@ hjkl
 gg/G            start / end
 h/m             meddle
 Ctrl + d/u      farword/back half page
-Ctrl ++ f/b      forward/back a page
+Ctrl + f/b      forward/back a page
 Ctrl + i/o      farword /back cursor locateº
 Ctrl + p/n      naming...
 Ctrl + e        disable autocomplete
