@@ -45,6 +45,6 @@ a terminal emulator application
 
 ### How fixed unknow error?
 ```
-make sure `pkg upgrade -qyy` before done
+make sure `pkg upgrade -qy` before done
 ```
 
