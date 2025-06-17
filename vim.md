@@ -189,12 +189,6 @@ let g:lsc_auto_map = {
     \ 'Completion': 'completefunc',
     \}
 ```
-### NERDTree
-```
-shilt B                     toggle bookmark
-:Bookmark                   add current to bookmark
-Shift d                     remove bookmark by selected
-```
 
 ### vim-commentary
 ```
