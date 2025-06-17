@@ -1,5 +1,10 @@
 # VIM
 
+- effect move
+- effect action
+- effect batch
+
+
 # how
 - more moudle in action to better with `.` eg: `diw` more then `dw`
 - use leader key better press  ctrl  alt...
@@ -73,7 +78,7 @@ CMD no need point address
 :[range] put [x]
 ```
 
-## view mode
+## move
 ```
 w/e | b         forward | back a word
 ^/0 | $         move to start of line | last of line
