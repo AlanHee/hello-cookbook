@@ -107,8 +107,8 @@ m{mark}:        mark current locate as `mark`
 mark can be [a-z]
 
 ``:             last jump locate
-'.:             last change locate
-'^:             last insert locate
+`.:             last change locate
+`^:             last insert locate
 ```
 
 
