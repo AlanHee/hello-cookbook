@@ -35,13 +35,7 @@ n/N                         jump next
 Ctrl + L                    clear search high light
 ```
 
-### repeat `.`
 
-```
-.                           repeat last change
-u                           disable last change
-ctrl + r                    redo last change
-```
 
 ### reg
 ```
@@ -108,6 +102,14 @@ mark can be [a-z]
 ``:             last jump locate
 `.:             last change locate
 `^:             last insert locate
+```
+
+#### repeat `.`
+
+```
+.                           repeat last change
+u                           disable last change
+ctrl + r                    redo last change
 ```
 
 
