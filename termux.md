@@ -2,8 +2,6 @@ a terminal emulator application
 
 ### Keyword
 - run it deamon sessions with names
-- termux-setup-storage
-- termux-change-repo
 
 ### path
 ```
