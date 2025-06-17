@@ -35,7 +35,7 @@ a linux terminal emulator app
 
 ```
 
-### repo
+### Repository
 ```
 - game-repo
 - root-repo
