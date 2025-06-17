@@ -1,4 +1,4 @@
-a terminal emulator application
+a linux terminal emulator app
 
 ### Keyword
 - run it deamon sessions with names
