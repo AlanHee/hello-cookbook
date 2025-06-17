@@ -17,20 +17,20 @@
 - # root user
 ```
 
-### file test
+### test
 ```
 - test with  $? 
 - cmd for context(上下文)
 ```
 
-### file help
+### help
 ```
 man
 help
 info
 ```
 
-### file path 
+### path 
 ```
 /           root dir
 /root       root user home
@@ -40,20 +40,20 @@ info
 /usr/bin     usr/sbin preinstall cmd
 ```
 
-#### file type
+### determine inner or outter
 ```
-type [cmd]  determine inner or outter file
+type [cmd]  
 
 ```
 
-#### file create
+### create
 ```
 echo 
 touch
 mkdir fold/{fold1,fold2}/path
 ```
 
-#### file read
+### read
 ```
 ls -h           show file sizeon m 
 ls -R           tree look 
@@ -81,7 +81,7 @@ stat file
 du   
 ```
 
-#### file modify
+### modify
 ```
 mv
 rm -r 
@@ -91,13 +91,13 @@ cp -p # keep time
 cp -a # keep own group...
 ```
 
-#### file archives
+### archive
 ```
 tar -xzvf archive.tar.gz 
 tar czvf archive.tar.gz /path/to/files
 ```
 
-#### file compression
+### compression
 ```
 zip -r archive.zip path/to/files
 zip -er archive.zip path/to/files   # crypt
@@ -108,14 +108,14 @@ bzip2
 
 ```
 
-#### file run
+### run
 ```
 . 
 source 
 bash
 ```
 
-### file type
+### type
 ```
 - normal
 d fold
@@ -126,7 +126,7 @@ f pipe
 s suit
 ```
 
-### file primession 
+### primession 
 ```
 r4 w2 x1
 chmod
@@ -155,7 +155,7 @@ find /home -type d -name myfold
 find / -type f -size +500M -size -1G
 ```
 
-### file find text
+### find text in a file
 ```
 grep 
 -i  ignore case
@@ -173,7 +173,7 @@ grep pass....$ /root/anaconda-ks.cfg
 grep -r pattern dir 
 ```
 
-#### file init
+### init
 ```
 df                  see disk size cmd
 du                  see fold size cmd
@@ -181,7 +181,7 @@ fdisk   [-i]         sperete disk cmd
 mkfs                disk format cmd
 ```
 
-#### file regex
+### regex
 ```
 .           one
 *           more
@@ -195,13 +195,13 @@ $           end
 {...}       times
 ```
 
-#### file start
+### start
 ```
 BIOS  → MBR → bootLoader （grub）→kernel 
 → systemd→  init  system shell scripts
 ```
 
-#### file's user & group
+### user & group
 ```
 id
 su - user-name      switch user
@@ -234,7 +234,7 @@ join
 
 ```
 
-### file net
+### net
 ```
 ip
 ping host           result
@@ -252,14 +252,14 @@ ss                  modern netstat
 nmap                net exploration and security scanner
 ```
 
-### file mount
+### mount
 ```
 mount -t            file system
 mount -o rw | rw    file read only | read & write
 mount -o remoute
 ```
 
-### file LVM(3level) 
+### LVM(3level) 
 ```
 pvcreate & pvs      phical  create & see
 vgcreate & vgs      logic group create & see
@@ -267,7 +267,7 @@ lvcreate % lvs      logic craete & see
 lvextend            logic extend
 ```
 
-### file advance operate
+### advance operate
 
 #### awk
 ```
