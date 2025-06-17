@@ -3,6 +3,19 @@ a terminal emulator application
 ### Keyword
 - run it deamon sessions with names
 
+### Keymaps
+```
+ Ctrl+alt+c
+ Ctrl+alt+n/p 
+ Ctrl+alt+-/+
+ Ctrl+alt+k         toggle soft keyboard
+ Ctrl+alt+r         Rename current session
+ Ctrl+alt-m         show menu
+ Ctrl+alt+u         select URL
+
+```
+
+
 ### path
 ```
 - $HOME         files/home
