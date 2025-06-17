@@ -4,18 +4,71 @@
 - effect action
 - effect batch
 
-
-# how
+## keyword
 - more moudle in action to better with `.` eg: `diw` more then `dw`
 - use leader key better press  ctrl  alt...
 
-## visual mode
+## Normal mode
+
+### into edit mode
 ```
-v                           col or line v mode
-ctrl+v                      module v mode
+iIoOAa
 ```
 
-## cmd mode
+### into visual mode
+```
+v               col or line v mode
+ctrl+v          module v mode
+```
+
+### Move
+```
+hjkl											   
+gg/G            start / end
+w/e | b         forward | back a word
+^/0 | $         move to start of line | last of line
+%               join to reg
+f | F + [char]  to char locate (`;` forwrd  type `,` back way)
+Ctrl + d/u      farword/back half page
+Ctrl + f/b      forward/back a page
+Ctrl + i/o      farword /back cursor locateº
+Ctrl + p/n      naming...
+h/m             meddle
+
+```
+
+### repeat 
+```
+.                           repeat last change
+u                           disable last change
+ctrl + r                    redo last change
+```
+
+### mark 
+```
+m{mark}:        mark current locate as `mark`
+`{mark}:        go to mark locate
+``:             last jump locate
+`.:             last change locate
+`^:             last insert locate
+```
+
+### comment (vim-commentary plug)
+```
+gcc             toggle comment current line
+gcap            comment current part
+gcu             cancel comment current part
+```
+
+### zip code
+```
+zf              zip code create
+zo              zip code open
+zc              zip code close
+```
+
+
+## Command mode
 ```
 :grep -r /                  find in other file
 :!grep -r                   find in other file 
@@ -40,8 +93,6 @@ n/N                         jump next
 Ctrl + L                    clear search high light
 ```
 
-
-
 ### reg
 ```
 :reg {register}             print register
@@ -64,7 +115,7 @@ n           just  count
 eg: count how many times `Vim` appear
 :%s/Vim//gn
 ```
-#### Ex
+### Ex
 Diff Ex with CMD line?
 CMD for unit in a line
 CMD no need point address
@@ -78,49 +129,11 @@ CMD no need point address
 :[range] put [x]
 ```
 
-## move
+## Edit mode
 ```
-w/e | b         forward | back a word
-^/0 | $         move to start of line | last of line
-%               join to reg
-f | F + [char]      to char locate (`;` forwrd  type `,` back way)
-hjkl											   
-gg/G            start / end
-h/m             meddle
-Ctrl + d/u      farword/back half page
-Ctrl + f/b      forward/back a page
-Ctrl + i/o      farword /back cursor locateº
-Ctrl + p/n      naming...
 Ctrl + e        disable autocomplete
 Ctrl + y        submit autocomplete
-zf              zip code create
-zo              zip code open
-zc              zip code close
-```
-#### mark 
-```
-m{mark}:        mark current locate as `mark`
-`{mark}:        go to mark locate
 
-mark can be [a-z]
-
-``:             last jump locate
-`.:             last change locate
-`^:             last insert locate
-```
-
-#### repeat `.`
-
-```
-.                           repeat last change
-u                           disable last change
-ctrl + r                    redo last change
-```
-
-
-## edit mode
-```
-iIoOAa
 s                       delete a line
 J                       join with next line
 x
@@ -128,18 +141,16 @@ r/R
 u
 Ctrl + s | x    +- current num 
 ```
-
 ### {operator}
 ```
-yy | Y               copy
+yy | Y          yank
 d               delete
 c               change
-v               into visual mode
-yy/dd/cc        operator current line 
-cc | C | s      clear current line and edit
+cc | C | S      clear current line and edit
+dd | D          delete current line
 ```
 
-### {operator}{motion}
+### {operator}{motion}=action
 ```
 ye              copy to end of word 
 d$              delete to end of line
@@ -153,7 +164,7 @@ w/W/s/p                 word/word word/string/p
 i/a                     inner/around
 ```
 
-### {operator}{textobjects} 
+### {operator}{textobjects}=action 
 ```
 - with `.` repeat last operator
 - `[count]` repeat opertor
@@ -173,13 +184,4 @@ yi{                 copy inner {} text
 ### How many vim version?
 ```
 vim / vim-gtk / vim-python
-```
-
-## Plug 
-
-### vim-commentary
-```
-gcc             toggle comment current line
-gcap            comment current part
-gcu             cancel comment current part
 ```
