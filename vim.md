@@ -94,7 +94,6 @@ Ctrl + i/o      farword /back cursor locateº
 Ctrl + p/n      naming...
 Ctrl + e        disable autocomplete
 Ctrl + y        submit autocomplete
-cc | C | s      clear current line and edit
 zf              zip code create
 zo              zip code open
 zc              zip code close
@@ -130,6 +129,7 @@ d               delete
 c               change
 v               into visual mode
 yy/dd/cc        operator current line 
+cc | C | s      clear current line and edit
 ```
 
 ### {operator}{motion}
