@@ -7,6 +7,7 @@
 ## keyword
 - more moudle in action to better with `.` eg: `diw` more then `dw`
 - use leader key better press  ctrl  alt...
+- 3 mode: command Ex insert 
 
 ## Normal mode
 
@@ -25,7 +26,6 @@ ctrl+v          module v mode
 ```
 hjkl											   
 gg/G            start / end
-w/e | b         forward | back a word
 ^/0 | $         move to start of line | last of line
 %               join to reg
 f | F + [char]  to char locate (`;` forwrd  type `,` back way)
@@ -36,15 +36,14 @@ Ctrl + p/n      naming...
 h/m             meddle
 
 ```
-
-### repeat 
+### Move by word
 ```
-.                           repeat last change
-u                           disable last change
-ctrl + r                    redo last change
+w:              word
+e:              word's end locate
+b:              back word
 ```
 
-### mark 
+### Move by mark 
 ```
 m{mark}:        mark current locate as `mark`
 `{mark}:        go to mark locate
@@ -53,20 +52,20 @@ m{mark}:        mark current locate as `mark`
 `^:             last insert locate
 ```
 
+### repeat 
+```
+.                           repeat last change
+u                           disable last change
+ctrl + r                    redo last change
+```
+
+
 ### comment (vim-commentary plug)
 ```
 gcc             toggle comment current line
 gcap            comment current part
 gcu             cancel comment current part
 ```
-
-### zip code
-```
-zf              zip code create
-zo              zip code open
-zc              zip code close
-```
-
 
 ## Command mode
 ```

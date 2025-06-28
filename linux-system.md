@@ -1,5 +1,8 @@
 ## Linux
 
+### 4 basic
+- core + GUN + shell + desktop env
+- stores files in a single directory called a virtual directory
 ### what 
 ```
 - all is file
@@ -31,6 +34,7 @@ info
 ```
 
 ### path 
+filesystem hierarchy standard，FHS,Many Linux distributions follow FHS.
 ```
 /           root dir
 /root       root user home
@@ -49,36 +53,54 @@ type [cmd]
 ### create
 ```
 echo 
+echo $0         print current shell file name
 touch
 mkdir fold/{fold1,fold2}/path
+cp              after with`\` means copy to fold
+ln              If you need to maintain two or more copies of the same file in the system, you can use a single physical copy and multiple virtual copies (links) instead of creating multiple physical copies
 ```
 
 ### read
 ```
+file            determine file type
 ls -h           show file sizeon m 
 ls -R           tree look 
 ls -r           revive on time
 ls -l           as list view
 ls -t           sort list by time
+ls -i           To view the inode number of a file or directory,
 cd -            go to pre pwd 
 tree            -a
 pstree
 pwd
-ln target link -s
+ln target link -ls
 more/less/cat   -f
 head/tail
 tail  -f        view on time 
 tail -1 -f      view last line on time
 history  !!
 whatis
-file 
 date: +/%Y/%m/%d
 bc
 cal
 type cmd
 wc -l           count lines 
 stat file
-du   
+less            'less is more' is actually an upgraded version of the 'more' command. Provides multiple very practical features that enable flipping back and forth in text files, as well as some advanced search functions
+```
+
+#### read by ls
+```
+-c          char
+-b          block
+-s          steam
+-l          link
+-d          dir
+-           file
+*           execute 
+-s          socket
+-p          pip
+
 ```
 
 ### modify
@@ -265,6 +287,15 @@ pvcreate & pvs      phical  create & see
 vgcreate & vgs      logic group create & see
 lvcreate % lvs      logic craete & see
 lvextend            logic extend
+```
+
+
+### common  standrad
+```
+i                   alert 
+h                   help
+s                   silent
+v                   vobose
 ```
 
 ### advance operate

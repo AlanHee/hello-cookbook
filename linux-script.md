@@ -1,6 +1,11 @@
 ## Linux Script
 make your idea as script then forgot it!
 
+### import
+```
+source .        start shell in current p
+```
+
 ### var
 #### var define
 
