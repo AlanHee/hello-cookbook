@@ -3,6 +3,7 @@ a linux terminal emulator app
 ### Keyword
 - run it deamon sessions with names
 - make sure `pkg upgrade -qy` before done
+- pkg (apt) 
 
 ### Keymap
 ```

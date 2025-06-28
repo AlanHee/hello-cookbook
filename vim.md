@@ -1,8 +1,4 @@
-# VIM
-
-- effect move
-- effect action
-- effect batch
+  effect move action batch, make your own workflow
 
 ## keyword
 - more moudle in action to better with `.` eg: `diw` more then `dw`
@@ -48,8 +44,6 @@ b:              back word
 m{mark}:        mark current locate as `mark`
 `{mark}:        go to mark locate
 ``:             last jump locate
-`.:             last change locate
-`^:             last insert locate
 ```
 
 ### repeat 
@@ -179,8 +173,3 @@ yi{                 copy inner {} text
 - textobjects due is 明确的
 - textobjects  只能跟在operator后面
 
-## FAQ
-### How many vim version?
-```
-vim / vim-gtk / vim-python
-```
